@@ -1,17 +1,27 @@
 <template>
   <div id="container">
-    <strong>{{ name }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <p> <strong> {{ nombre }} </strong>  </p>
+    <p> Puede contactarme a : 20211370@itla.edu.do</p>
+    <img src="../img/foto.jpeg" alt="">
+    
   </div>
 </template>
 
-<script setup lang="ts">
-defineProps({
-  name: String,
-});
+
+<script>
+    export default{
+        data(){
+            return{
+                nombre: 'Davinci Montas',
+            }
+
+        },
+
+    }
+    
 </script>
 
-<style scoped>
+<style>
 #container {
   text-align: center;
   position: absolute;
@@ -35,5 +45,10 @@ defineProps({
 
 #container a {
   text-decoration: none;
+}
+
+img {
+  height: 200px;
+  width: 50%;
 }
 </style>
